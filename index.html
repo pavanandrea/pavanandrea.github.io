@@ -156,6 +156,21 @@
 
                 <hr/>
                 <div class="article">
+                    <div class="picture"><img src="assets/petprojects-shallowchessai.png" alt="ShallowChessAI"></div>
+                    <div class="text">
+                        <div class="headline">Chess AI with limited look-ahead</div>
+                        <div class="tags">
+                            <div class="tag">Software</div>
+                            <div class="tag">AI</div>
+                        </div>
+                        <div class="description">
+                            ShallowChessAI is a simple chess engine written in Julia. It implements a Minimax search algorithm with alpha-beta pruning and employs a Multi-Layer Perceptron (MLP) neural network as an evaluation function. A tiny MLP model of 24k params has been trained on a dataset of chess boards extracted from Lichess games and further extended by introducing random moves, for a total of 483k samples. Each board was evaluated using Stockfish with a fixed depth of 10 with the goal of embedding some ahead information into the heuristic. The engine launched with a depth of only 4 can play surprisingly well for its size, even though it has some difficulty in making a checkmate.
+                            <p><a href="https://github.com/pavanandrea/ShallowChessAI/">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="article">
                     <div class="picture"><img src="assets/petprojects-quickllama.jpg" alt="LLAMA"></div>
                     <div class="text">
                         <div class="headline">QuickLLaMA - A simple and lightweight GUI for llama.cpp</div>
@@ -163,9 +178,12 @@
                             <div class="tag">Software</div>
                             <div class="tag">AI</div>
                         </div>
-                        <div class="description">A simple and lightweight graphical user interface (GUI) for llama-cpp, an open-source toolkit for natural language processing. The development of this project has been driven by the fact that the available GUI options were either bloated or required complex setup procedures. My goal was to build an easy-to-use and lightweight application in NeutralinoJS that can run on any major operating system without requiring
-the installation of additional libraries or frameworks.
-                        <!--<p><a href="#">Read more</a></p>--></div>
+                        <div class="description">
+                            A simple and lightweight graphical user interface (GUI) for llama-cpp, an open-source toolkit for natural language processing. The development of this project has been driven by the fact that the available GUI options were either bloated or required complex setup procedures. My goal was to build an easy-to-use and lightweight application in NeutralinoJS that can run on any major operating system without requiring
+    the installation of additional libraries or frameworks.
+                            <p>(Now superseded by the integrated UI in llama.cpp server)</p>
+                            <!--<p><a href="#">Read more</a></p>-->
+                        </div>
                     </div>
                 </div>
                 <hr/>
@@ -177,10 +195,12 @@ the installation of additional libraries or frameworks.
                              <div class="tag">Manufacturing</div>
                             <div class="tag">3D printing</div>
                         </div>
-                        <div class="description">A large-scale 3D printer with a CoreXY architecture and a lightweight bowden extruder + V6 hotend, designed to print large parts in a single piece without compromising on printing times. My goal was to create a machine that not only performs well but is also easy to maintain and upgrade, using standard components that are readily available and open-source software.
-                        <br/>
-                        The structure is built with sturdy 3030 aluminum profiles and Hiwin linear guides for the X and Y axes, ensuring smooth movement and minimizing any potential wobbling. The Z-axis features ballscrews with linear bearings, providing a reliable and precise vertical motion. On the software side, the combination of a standard Marlin firmware and OctoPi running on a Raspberry Pi allows for seamless operation and provides ample room for future upgrades and expansions.
-                        <!--<p><a href="#">Read more</a></p>--></div>
+                        <div class="description">
+                            A large-scale 3D printer with a CoreXY architecture and a lightweight bowden extruder + V6 hotend, designed to print large parts in a single piece without compromising on printing times. My goal was to create a machine that not only performs well but is also easy to maintain and upgrade, using standard components that are readily available and open-source software.
+                            <br/>
+                            The structure is built with sturdy 3030 aluminum profiles and Hiwin linear guides for the X and Y axes, ensuring smooth movement and minimizing any potential wobbling. The Z-axis features ballscrews with linear bearings, providing a reliable and precise vertical motion. On the software side, the combination of a standard Marlin firmware and OctoPi running on a Raspberry Pi allows for seamless operation and provides ample room for future upgrades and expansions.
+                            <!--<p><a href="#">Read more</a></p>-->
+                        </div>
                     </div>
                 </div>
                 <hr/>
