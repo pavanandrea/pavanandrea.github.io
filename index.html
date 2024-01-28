@@ -23,18 +23,19 @@
         </nav>
     </header>
 
+
     <section>
-        <div class="homepage">
+        <div class="homepage dark-section">
             <div class="content">
                 <h1>Hi, I'm Andrea Pavan!</h1>
                 <h2>MSc in Aerospace engineering, tech enthusiast</h2>
-                <!--<h3>Areas of interest: numerical simulation and optimization, aircraft design, 3D printing</h3>-->
             </div>
         </div>
     </section>
 
+
     <section id="about">
-        <div class="about">
+        <div class="about light-section">
             <div class="content">
                 <div class="title">About me</div>
                 <h3>In a nutshell:
@@ -52,7 +53,7 @@
 
 
     <section id="resume">
-        <div class="resume">
+        <div class="resume dark-section">
             <div class="content">
                 <div class="title">Resume</div>
                 <div class="timeline">
@@ -86,8 +87,6 @@
                                 <i><a href="https://www.polito.it/en">Polytechnic University of Turin</a>, Turin, Italy</i>
                                 <p/>
                                 Thesis title: <a href="https://webthesis.biblio.polito.it/26504/">Development and application of a meshless Generalized Finite Difference Method for the simulation of the 3D printing process</a>
-                                <p/>
-                                Final grade: 106/110
                             </div>
                         </div>
 
@@ -103,8 +102,6 @@
                                 <i><a href="https://www.unipd.it/en/">University of Padua</a>, Padua, Italy</i>
                                 <p/>
                                 Final project: Development of a numerical method for airfoil optimization
-                                <p/>
-                                Final grade: 109/110
                             </div>
                         </div>
 
@@ -118,7 +115,7 @@
 
 
     <section id="portfolio">
-        <div class="portfolio">
+        <div class="portfolio light-section">
             <div class="content">
                 <div class="title">Portfolio</div>
                 <h3>This is a selection of projects, personal and/or academic, serving as my portfolio.</h3>
@@ -148,8 +145,9 @@
         </div>
     </section>
 
+
     <section id="petprojects">
-        <div class="petprojects">
+        <div class="projects dark-section">
             <div class="content">
                 <div class="title">Pet projects</div>
                 <h3>From software development to CFD and 3D printing, I have dedicated lots of time and energy to my personal projects over the years. This section will be a platform to showcase some of this work.</h3>
@@ -179,8 +177,7 @@
                             <div class="tag">AI</div>
                         </div>
                         <div class="description">
-                            A simple and lightweight graphical user interface (GUI) for llama-cpp, an open-source toolkit for natural language processing. The development of this project has been driven by the fact that the available GUI options were either bloated or required complex setup procedures. My goal was to build an easy-to-use and lightweight application in NeutralinoJS that can run on any major operating system without requiring
-    the installation of additional libraries or frameworks.
+                            A simple and lightweight graphical user interface (GUI) for llama-cpp, an open-source toolkit for natural language processing. The available GUI options to run a LLM were either bloated or required complex setup procedures. My goal was to build an easy-to-use and lightweight application in NeutralinoJS that can run on any major operating system without requiring the installation of additional libraries or frameworks.
                             <p>(Now superseded by the integrated UI in llama.cpp server)</p>
                             <!--<p><a href="#">Read more</a></p>-->
                         </div>
@@ -192,36 +189,36 @@
                     <div class="text">
                         <div class="headline">Homebuilt CoreXY 3D printer</div>
                         <div class="tags">
-                             <div class="tag">Manufacturing</div>
+                            <!--<div class="tag">Manufacturing</div>-->
                             <div class="tag">3D printing</div>
                         </div>
                         <div class="description">
                             A large-scale 3D printer with a CoreXY architecture and a lightweight bowden extruder + V6 hotend, designed to print large parts in a single piece without compromising on printing times. My goal was to create a machine that not only performs well but is also easy to maintain and upgrade, using standard components that are readily available and open-source software.
                             <br/>
-                            The structure is built with sturdy 3030 aluminum profiles and Hiwin linear guides for the X and Y axes; the Z-axis features ballscrews with linear bearings. On the software side, the combination of a standard Marlin firmware and OctoPi running on a Raspberry Pi provides ample room for future upgrades and expansions.
+                            The structure is built with 3030 aluminum profiles and Hiwin linear guides for the X and Y axes; the Z-axis features ballscrews with linear bearings. On the software side, a standard Marlin firmware and OctoPi running on a Raspberry Pi for future upgrades and expansions.
                             <!--<p><a href="#">Read more</a></p>-->
                         </div>
                     </div>
                 </div>
                 <hr/>
-	    </div>
+            </div>
         </div>
     </section>
 
 
     <section id="contact">
-        <div class="contact">
+        <div class="contact light-section">
             <div class="content">
                 <div class="title">Contact</div>
                 <h3>If you have an interesting project don't hesitate to contact me: my inbox is always open to discuss cutting-edge ideas!</h3>
                 <div class="container">
-                    <div class="item">
-                        <img src="assets/mail-icon.jpg"/>
+                    <a href="assets/mail-address.png" target="_blank"><div class="item">
+                        <img src="assets/mail-icon.jpg" class="logo"/>
                         Email
                         <img src="assets/mail-address.png" style="border: none;"/>
-                    </div>
-                    <a href="https://github.com/pavanandrea" target="_blank"><div class="item">
-                        <img src="assets/github-icon.jpg"/>
+                    </div></a>
+                    <a href="https://github.com/pavanandrea?tab=repositories" target="_blank"><div class="item">
+                        <img src="assets/github-icon.jpg" class="logo"/>
                         Github
                         <img src="assets/github-address.png" style="border: none;"/>
                     </div></a>
@@ -231,7 +228,7 @@
     </section>
 
     <footer class="footer">
-        <p>Copyright &copy; 2023 Andrea Pavan</p>
+        <p>Copyright &copy; 2024 Andrea Pavan</p>
         <p>Made from scratch in pure HTML and CSS</p>
         <p>Except where otherwise noted, content on this site is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><p>
     </footer>

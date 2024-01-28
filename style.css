@@ -21,6 +21,43 @@ section {
     border-bottom: 1px solid #202020;
 }
 
+.dark-section {
+    width: 100%;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(45deg,#252525,#212121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-section {
+    width: 100%;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(45deg,#292929,#252525);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: 100;
+}
+
+.title {
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 55%;
+    text-align: justify;
+    margin-top: max(20px,5%);
+    margin-bottom: max(20px,5%);
+}
+
 .footer {
     background-color: #202020;
     color: #747C80;
@@ -85,18 +122,10 @@ nav a:hover {
 }
 
 
+
 /***************
     Homepage
 ***************/
-
-.homepage {
-    width: 100%;
-    min-height: 100vh;
-    background: -webkit-linear-gradient(45deg,#252525,#212121);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .homepage .content {
     width: 55%;
@@ -123,41 +152,15 @@ nav a:hover {
     color: #3F5588;
 }
 
-.homepage h3 {
-    font-size: 100%;
-    font-weight: 100;
-}
 
 
 /***************
     About me
 ***************/
 
-.about {
-    width: 100%;
-    min-height: 100vh;
-    background: -webkit-linear-gradient(45deg,#292929,#252525);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about .title {
-    text-align: justify;
-    font-size: 250%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .about .content {
     width: 55%;
     text-align: justify;
-}
-
-.about .content h3 {
-    font-size: 100%;
-    font-weight: 100;
 }
 
 
@@ -165,30 +168,6 @@ nav a:hover {
 /*************
     Resume
 *************/
-
-.resume {
-    width: 100%;
-    min-height: 100vh;
-    background: -webkit-linear-gradient(45deg,#252525,#212121);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.resume .content {
-    width: 55%;
-    text-align: center;
-    margin-top: max(20px,5%);
-    margin-bottom: max(20px,5%);
-}
-
-.resume .content .title {
-    text-align: justify;
-    font-size: 250%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .resume .content .timeline {
     position: relative;
@@ -268,27 +247,10 @@ nav a:hover {
 }
 
 
+
 /****************
     Portfolio
 ****************/
-
-.portfolio {
-    width: 100%;
-    min-height: 100vh;
-    background: -webkit-linear-gradient(45deg,#292929,#252525);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolio .title {
-    text-align: justify;
-    font-size: 250%;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .portfolio .content {
     width: 55%;
@@ -342,48 +304,18 @@ nav a:hover {
 }
 
 
-/***********
-    Blog
-***********/
+/***************
+    Projects
+***************/
 
-.petprojects {
-    width: 100%;
-    min-height: 100vh;
-    background: -webkit-linear-gradient(45deg,#252525,#212121);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.petprojects .title {
-    text-align: justify;
-    font-size: 250%;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.petprojects .content {
-    width: 55%;
-    text-align: justify;
-    margin-top: max(20px,5%);
-    margin-bottom: max(20px,5%);
-}
-
-.petprojects .content h3 {
-    font-size: 100%;
-    font-weight: 100;
-}
-
-.petprojects .content .article {
+.projects .content .article {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
 
-.petprojects .content .article .picture {
+.projects .content .article .picture {
     width: 20vh;
     height: 20vh;
     margin: 10px;
@@ -392,49 +324,49 @@ nav a:hover {
     justify-content: center;
 }
 
-.petprojects .content .article .picture img {
+.projects .content .article .picture img {
     width: 100%;
 }
 
-.petprojects .content .article .text {
+.projects .content .article .text {
     width: 100%;
     padding: 10px;
 }
 
-.petprojects .content .article .text .headline {
+.projects .content .article .text .headline {
     font-size: 100%;
     margin-bottom: 5px;
     text-align: justify;
     font-weight: bold;
 }
 
-.petprojects .content .article .text .tags {
+.projects .content .article .text .tags {
     font-size: 80%;
     overflow: auto;
 }
 
-.petprojects .content .article .text .tags .tag {
+.projects .content .article .text .tags .tag {
     float:left;
     padding: 2.5px 10px 2.5px 10px;
     margin-right: 5px;
     margin-bottom: 5px;
-    border: 1px solid #E9ECED;
-    color: #E9ECED;
+    border: 1px solid #727272;
+    color: #727272;
 }
 
-.petprojects .content .article .text .description {
+.projects .content .article .text .description {
     font-size: 80%;
 }
 
-.petprojects .content .article .text .description p {
+.projects .content .article .text .description p {
     line-height: 0px;
 }
 
-.petprojects .content .article .text .description a {
+.projects .content .article .text .description a {
     color: #E9ECED;
 }
 
-.petprojects .content .article .text .description a:hover {
+.projects .content .article .text .description a:hover {
     color: #4A7CF0;
 }
 
@@ -444,31 +376,9 @@ nav a:hover {
     Contact
 **************/
 
-.contact {
-    width: 100%;
-    min-height: 100vh;
-    background: -webkit-linear-gradient(45deg,#292929,#252525);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact .title {
-    text-align: justify;
-    font-size: 250%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .contact .content {
     width: 55%;
     text-align: center;
-}
-
-.contact .content h3 {
-    font-size: 100%;
-    font-weight: 100;
 }
 
 .contact .content .container {
@@ -485,7 +395,7 @@ nav a:hover {
 }
 
 .contact .content .container .item {
-    min-width: 120px;
+    min-width: 150px;
     max-width: 49%;
     text-align: center;
     float: inline-start;
@@ -497,6 +407,10 @@ nav a:hover {
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 5px;
+}
+
+.contact .content .container .item .logo {
+    max-width: 80%;
     border-radius: 50%;
     border: 1px solid #E9ECED;
 }
