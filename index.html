@@ -6,262 +6,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Pavan Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#petprojects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ANDREA PAVAN</div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
+    <section class="hero">
+        <div class="container">
+            <h1>MSc in Aerospace Engineering</h1>
+            <p>Hi, I'm Andrea Pavan. I specialize in fluid dynamics and aircraft architecture.</p>
+            <a href="#projects" class="btn">View my work</a>
+        </div>
+    </section>
 
-    <section>
-        <div class="homepage">
-            <div class="content">
-                <h1>MSc in <span class="colored">Aerospace Engineering</span></h1>
-                <h2>Hi, I'm Andrea Pavan. I specialize in fluid dynamics and aircraft architecture</h2>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I have been 3D printing as a hobby since high school, designing and making most of the objects myself from scratch.
+                At first it felt like magic, turning my ideas into a tangible object.
+                However, I soon realized that the CAD stage was a major bottleneck;
+                the time spent drawing sketches often left my printer sitting idle for days.</p>
+                <br/>
+                <p>During my engineering studies I began exploring simulation-based design, numerical optimization and topology optimization tools.
+                These approaches are a match made in heaven with 3D printing, taking full advantage of the design freedom it offers.
+                They also cut the time spent on CAD modeling and achieve better performance with fewer design iterations and less material waste.</p>
+                <p>For my final project I joined the <a href="https://www.teamliftup.it/" target="_blank">LiftUp Student Team</a>.
+                I implemented a multi-fidelity inverse-design method coupled with a genetic algorithm to design the airfoil and wing of the Kowalsky drone.
+                I am proud of this work; the drone competed in the Air Cargo Challenge and finished with good results.</p>
+                <br/>
+                <p>Since then my focus has shifted towards multidisciplinary simulations.
+                For my master's thesis I developed a meshless GFDM method
+                and applied it to the thermo-mechanical simulation of the 3D printing process.</p>
+                <p>In my free time I have also written several analysis tools, including a 3D panel method and a compressible CFD solver.</p>
+                <p>After graduation, I completed my education with an Advanced Master in aircraft architecture and an end-of-studies internship on propeller aeroacoustics.</p>
             </div>
         </div>
     </section>
 
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project -->
+                <a href="https://webthesis.biblio.polito.it/26504/" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-3d-printing-simulation.gif" alt="Thermo-mechanical simulation of the 3D printing process" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Thermomechanical simulation of 3D printing processes</h3>
+                        <p class="project-description">
+                            Developed a meshless method for unsteady heat transfer and linear elasticity,
+                            using it to investigate warping and inter-layer bonding strength.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Julia</span>
+                            <span class="tag">Master Thesis</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
 
-    <section>
-        <div class="skills dark-section">
-            <div class="content">
-                <div class="title">My Technologies</div>
-                <ul class="technologies-list">
-                    <li>MATLAB</li>
-                    <li>Julia</li>
-                    <li>StarCCM+</li>
-                    <li>Altair Inspire</li>
-                    <li>Fusion 360</li>
-                    <li>XFOIL/XFLR5</li>
-                    <li>GMSH</li>
-                    <li>OpenVSP</li>
-                </ul>
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/AirfoilInverseDesign.jl" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-airfoil-inverse-design.gif" alt="Airfoil inverse design and optimization" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Airfoil inverse design and optimization</h3>
+                        <p class="project-description">
+                            Implemented an Embedded Multi-Fidelity Inverse Design (EMFID) method,
+                            integrating XFoil and a genetic algorithm to optimize the shape of the airfoil.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Aerodynamics</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Bachelor's Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/qprop.c" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-qpropc.png" alt="qprop.c" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">qprop.c - Blade-element propeller calculator</h3>
+                        <p class="project-description">
+                            A C library reimplementing QPROP for propeller aerodynamics analysis, enhanced with support for airfoil polars. It includes Python bindings and a web UI.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Aerodynamics</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-cfd-solver.png" alt="CFD Solver" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Unstructured multiphysics CFD solver</h3>
+                        <p class="project-description">
+                            Currently developing a FVM solver from scratch for high-ﬁdelity aero-thermo-mechanical simulations on 3D unstructured meshes.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Aerodynamics</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Julia</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-3d-panel-method.png" alt="3D Panel Method" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">3D Panel method with inner potential formulation</h3>
+                        <p class="project-description">
+                            Implemented a low-order 3D panel method for quick low-fidelity aerodynamic analysis, suitable for preliminary design of wings and rotors.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Aerodynamics</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Julia</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/QuadcopterFlightSimulator/" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-quadcopter-flight-simulator.png" alt="Quadcopter Flight Simulator" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">6DOF Quadcopter flight simulator</h3>
+                        <p class="project-description">
+                            A simple flight simulator running in real-time on a web browser, solving the nonlinear equations of motion of a F450 quadcopter drone.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">UAV</span>
+                            <span class="tag">Flight Mechanics</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-wind-tunnel-data-analysis.jpg" alt="Wind tunnel data analysis" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Wind tunnel data analysis and comparison with CFD</h3>
+                        <p class="project-description">
+                            Analyzed experimental data on subsonic jets, airfoil pressure distributions and wakes, turbulent BL (hot-wire anemometry) and vortex shedding (PIV).
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Aerodynamics</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Class Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-bellcrank-topopt.jpg" alt="Redesign of a bellcrank for Additive Manufacturing" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Redesign of a bellcrank for Additive Manufacturing</h3>
+                        <p class="project-description">
+                            Redesigned the bellcrank in the Sparker TL-Ultralight aircraft's ﬂight control system for LPBF, cutting weight by 65% while meeting all requirements.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Topology Optimization</span>
+                            <span class="tag">FEA</span>
+                            <span class="tag">Altair Inspire</span>
+                            <span class="tag">Class Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-wing-optimization.png" alt="Conceptual and preliminary design of a hybrid regional aircraft" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Multidisciplinary optimization of a regional aircraft wing</h3>
+                        <p class="project-description">
+                            Optimized wing geometry and structure with a genetic algorithm to minimize fuel use while meeting aerodynamics, weight, structural, range and CS-23 requirements.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Aircraft Design</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Class Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/ShallowChessAI/" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-shallowchessai.png" alt="ShallowChessAI" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ShallowChessAI - Chess engine with limited look-ahead</h3>
+                        <p class="project-description">
+                            Developed a minimax chess engine that uses a MLP neural network as evaluation function, trained on Stockﬁsh scores to play at low search depths.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Julia</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/TeenySlicer/" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-teenyslicer.png" alt="TeenySlicer" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TeenySlicer - Web-based 3D printing slicer</h3>
+                        <p class="project-description">
+                            A simple slicing software for 3D printing, running entirely in a web browser. Developed just for fun, serving as a sandbox for testing out new ideas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">Computational Geometry</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-corexy-3d-printer.jpg" alt="Homebuilt 3D printer" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Homebuilt CoreXY 3D printer from scratch</h3>
+                        <p class="project-description">
+                            Designed and built a CoreXY 3D printer using 3030 aluminum profiles, a V6 bowden extruder, a standard Marlin firmware and OctoPi.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-quadcopter.jpg" alt="Homebuild quadcopter" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Homebuilt F450 quadcopter drone</h3>
+                        <p class="project-description">
+                            Hacked together a simple quadcopter drone using a F450 frame, MN2213 motors and a PixHawk board with ArduPilot.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">UAV</span>
+                            <span class="tag">Fusion 360</span>
+                            <span class="tag">ArduPilot</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio">
-        <div class="portfolio dark-section">
-            <div class="content">
-                <div class="title">Portfolio</div>
-                <h3>This is a selection of my best projects in the field of aerospace engineering, both from my studies and personal interests.</h3>
-                <div class="project-container">
-                    <a href="https://webthesis.biblio.polito.it/26504/" target="_blank">
-                    <div class="project project-image-wrapper">
-                        <img src="./assets/portfolio-05-preview-fdm-simulation.gif" alt="">
-                        <h2 class="project-title">A meshless method for the thermo-mechanical simulation of the 3D printing process</h2>
-                        <div class="project-overlay">
-                        <h2>Master Thesis</h2>
-                        <p>Developed a meshless GFDM method in Julia for solving linear PDEs in 2D/3D geometries.</p>
-                        <p>Application to the thermo-mechanical simulation of 3D printing processes, investigating warping and inter-layer bonding strength.</p>
-                        <button>Read Thesis</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="https://github.com/pavanandrea/AirfoilInverseDesign.jl" target="_blank">
-                    <div class="project project-image-wrapper">
-                        <img src="./assets/portfolio-02-preview-airfoilinversedesign.gif" alt="">
-                        <h2 class="project-title">Development of an EMFID method for airfoil inverse design and optimization</h2>
-                        <div class="project-overlay">
-                        <h2>Bachelor's Final Project</h2>
-                        <p>A MATLAB implementation of the MGM method for airfoil inverse design.</p>
-                        <p>Implemented an Embedded Multi-Fidelity Inverse Design (EMFID) method, integrating XFoil and a genetic algorithm to optimize the shape of the airfoil</p>
-                        <button>See on GitHub</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="https://github.com/pavanandrea/qprop.c" target="_blank">
-                    <div class="project project-image-wrapper">
-                        <img src="./assets/petprojects-qpropc.png" alt="">
-                        <h2 class="project-title">qprop.c - library for fast aerodynamic analysis of propellers</h2>
-                        <div class="project-overlay">
-                        <h2>Personal Project</h2>
-                        <p>A pure C reimplementation of QPROP for propeller aerodynamics analysis, with Python and Julia interfaces</p>
-                        <button>See on GitHub</button>
-                        </div>
-                    </div>
-                    </a>
-                    <div class="project project-image-wrapper">
-                        <img src="./assets/portfolio-06-regional-aircraft.png" alt="">
-                        <h2 class="project-title">Conceptual and preliminary design of a hybrid regional aircraft</h2>
-                        <div class="project-overlay">
-                        <h2>Class Project</h2>
-                        <p>Conceptual design of a hybrid-electric 100-seat regional aircraft.</p>
-                        <p>Multidisciplinary optimization of the wing geometry and structure, minimizing fuel consumption while satisfying constraints on aerodynamics, weight, structure, range and EASA CS-23 requirements</p>
-                        <!--<button>Learn More</button>-->
-                        </div>
-                    </div>
-                    <div class="project project-image-wrapper">
-                        <img src="./assets/portfolio-07-wind-tunnel-and-cfd.jpg" alt="">
-                        <h2 class="project-title">Wind tunnel data analysis and comparison with CFD simulations</h2>
-                        <div class="project-overlay">
-                        <h2>Class Project</h2>
-                        <p>Analyzed experimental data from wind tunnel tests on a range of flows, including subsonic jets, airfoil pressure distributions and wakes, turbulent boundary layers and vortex shedding.</p>
-                        <p>Conducted a comparative study with CFD simulations using GMSH, SU2 CFD and Paraview.</p>
-                        <!--<button>Learn More</button>-->
-                        </div>
-                    </div>
-                    <div class="project project-image-wrapper">
-                        <img src="./assets/portfolio-04-preview-amr-su2.jpg" alt="">
-                        <h2 class="project-title">Adaptive mesh refinement around a transonic airfoil in SU2 CFD and GMSH</h2>
-                        <div class="project-overlay">
-                        <h2>Personal Project</h2>
-                        <p>Developed a MATLAB script for Automatic Mesh Refinement (AMR) in GMSH to simulate the transonic flow around a supercritical airfoil in SU2 CFD</p>
-                        <!--<button>Learn More</button>-->
-                        </div>
-                    </div>
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>CAD / CAE</h3>
+                    <ul class="skills-list">
+                        <li>StarCCM+</li>
+                        <li>Altair Inspire</li>
+                        <li>Fusion 360</li>
+                        <li>SU2 CFD</li>
+                        <li>ANSYS Mechanical</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Software & Tools</h3>
+                    <ul class="skills-list">
+                        <li>ParaView</li>
+                        <li>Gmsh</li>
+                        <li>OpenVSP</li>
+                        <li>Xfoil/XFLR5</li>
+                        <li>Qprop</li>
+                        <li>Cura</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <ul class="skills-list">
+                        <li>MATLAB</li>
+                        <li>Julia</li>
+                        <li>C</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Aerospace</h3>
+                    <ul class="skills-list">
+                        <li>Aerodynamics</li>
+                        <li>Computational Fluid Dynamics</li>
+                        <li>UAV Design</li>
+                        <li>Aircraft Architecture</li>
+                        <li>Flight Dynamics</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <ul class="skills-list">
+                        <li>Data Analysis</li>
+                        <li>Modeling & Simulation</li>
+                        <li>Prototyping</li>
+                        <li>Technical Reporting</li>
+                        <li>Multicultural Team Collaboration</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section id="petprojects">
-        <div class="projects dark-section">
-            <div class="content">
-                <div class="title">Other Projects</div>
-                <h3>From software development to 3D printing, I have dedicated lots of time and energy to my personal projects over the years. This section will be a platform to showcase some of this work.</h3>
-                <hr/>
-                <div class="article">
-                    <div class="picture"><img src="assets/petprojects-teenyslicer.png" alt="TeenySlicer"></div>
-                    <div class="text">
-                        <div class="headline">TeenySlicer</div>
-                        <div class="tags">
-                            <div class="tag">C/C++</div>
-                            <div class="tag">Web (HTML/CSS/JavaScript)</div>
-                        </div>
-                        <div class="description">
-                            A simple slicing software for 3D printing, developed just for fun, and serving as starting point for trying out ideas without dealing with the complexities of SOTA codes.
-                            <p><a href="https://github.com/pavanandrea/TeenySlicer/">See on GitHub</a> / <a href="https://pavanandrea.github.io/TeenySlicer/webgui/index.html">Run online</a></p>
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <div class="article">
-                    <div class="picture"><img src="assets/petprojects-quadcopterflightsimulator.png" alt="Quadcopter flight simulator"></div>
-                    <div class="text">
-                        <div class="headline">Quadcopter flight simulator</div>
-                        <div class="tags">
-                            <div class="tag">C/C++</div>
-                            <div class="tag">Web (HTML/CSS/JavaScript)</div>
-                        </div>
-                        <div class="description">
-                            A simple flight simulator running in real-time on a web browser, solving the nonlinear equations of motion of a F450 quadcopter drone
-                            <p><a href="https://github.com/pavanandrea/QuadcopterFlightSimulator/">See on GitHub</a> / <a href="https://pavanandrea.github.io/QuadcopterFlightSimulator/src/index.html">Run online</a></p>
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <div class="article">
-                    <div class="picture"><img src="assets/petprojects-shallowchessai.png" alt="ShallowChessAI"></div>
-                    <div class="text">
-                        <div class="headline">Chess AI with limited look-ahead</div>
-                        <div class="tags">
-                            <div class="tag">Julia</div>
-                            <div class="tag">Neural Networks</div>
-                            <div class="tag">C/C++</div>
-                            <div class="tag">Web (HTML/CSS/JavaScript)</div>
-                        </div>
-                        <div class="description">
-                            <!--ShallowChessAI is a simple chess engine written in Julia. It implements a Minimax search algorithm with alpha-beta pruning and employs a Multi-Layer Perceptron (MLP) neural network as an evaluation function. A tiny MLP model of 24k params has been trained on a dataset of chess boards extracted from Lichess games and further extended by introducing random moves, for a total of 483k samples. Each board was evaluated using Stockfish with a fixed depth of 10 with the goal of embedding some ahead information into the heuristic. The engine launched with a depth of only 4 can play surprisingly well for its size.-->
-                            ShallowChessAI, a chess AI written in Julia and C that uses a MLP neural network to approximate Stockfish scores and play with a very low search depth
-                            <p><a href="https://github.com/pavanandrea/ShallowChessAI/">See on GitHub</a> / <a href="https://pavanandrea.github.io/ShallowChessAI/webgui/index.html">Play online</a></p>
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <div class="article">
-                    <div class="picture"><img src="assets/petprojects-quadcopter.jpg" alt="Homebuilt quadcopter drone"></div>
-                    <div class="text">
-                        <div class="headline">Homebuilt quadcopter drone</div>
-                        <div class="tags">
-                            <div class="tag">ArduPilot</div>
-                        </div>
-                        <div class="description">
-                            Hacked together a basic quadcopter drone using a F450 frame, MN2213 motors and a PixHawk board with ArduPilot.
-                            <!--<p><a href="#">Read more</a></p>-->
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <div class="article">
-                    <div class="picture"><img src="assets/petprojects-quickllama.jpg" alt="LLAMA"></div>
-                    <div class="text">
-                        <div class="headline">QuickLLaMA - A lightweight GUI for llama.cpp</div>
-                        <div class="tags">
-                            <div class="tag">Web (HTML/CSS/JavaScript)</div>
-                        </div>
-                        <div class="description">
-                            <!--A simple and lightweight graphical user interface (GUI) for llama-cpp, an open-source toolkit for running locally large language models. The available GUI options to run a LLM were either bloated or required complex setup procedures. My goal was to build an easy-to-use and lightweight application in NeutralinoJS that can run on any major operating system without requiring the installation of additional libraries or frameworks.-->
-                            A simple and lightweight desktop GUI for llama-cpp to run large language models without installing bloated dependencies
-                            <p>(Now superseded by llama.cpp server)</p>
-                            <!--<p><a href="#">Read more</a></p>-->
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <div class="article">
-                    <div class="picture"><img src="assets/petprojects-3dmaxi.jpg" alt="3D printer"></div>
-                    <div class="text">
-                        <div class="headline">Homebuilt CoreXY 3D printer</div>
-                        <div class="tags">
-                            <div class="tag">SolidWorks</div>
-                            <div class="tag">MATLAB</div>
-                            <div class="tag">Cura</div>
-                        </div>
-                        <div class="description">
-                            <!--A large 3D printer with a CoreXY architecture and a lightweight bowden extruder + V6 hotend, designed to print large parts in a single piece without compromising on printing times. My goal was to create a machine that not only performs well but is also easy to maintain and upgrade, using standard components that are readily available and open-source software.
-                            <br/>
-                            The structure is built with 3030 aluminum profiles and Hiwin linear guides for the X and Y axes; the Z-axis features ballscrews with linear bearings. On the software side, a standard Marlin firmware and OctoPi running on a Raspberry Pi for future upgrades and expansions.-->
-                            Designed and built a CoreXY 3D printer using 3030 aluminum profiles and a V6 bowden extruder
-                            <!--<p><a href="#">Read more</a></p>-->
-                        </div>
-                    </div>
-                </div>
-                <hr/>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Interested in one of my projects? Feel free to reach out through any of the channels below. My inbox is always open to discuss new ideas!</p>
+            <div class="contact-items">
+                <a href="assets/mail-address-dark.png" target="_blank" class="contact-item">
+                    <div class="contact-icon"><img src="assets/mail-icon.jpg" /></div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-subtitle"><img email-address/></p>
+                </a>
+                <a href="https://github.com/pavanandrea?tab=repositories" target="_blank" class="contact-item">
+                    <div class="contact-icon"><img src="assets/github-icon.jpg" /></div>
+                    <h3 class="contact-title">GitHub</h3>
+                    <p class="contact-subtitle"><img github-address /></p>
+                </a>
             </div>
         </div>
     </section>
 
-
-    <section id="contact">
-        <div class="contact dark-section">
-            <div class="content">
-                <div class="title">Contact</div>
-                <h3>If you have an interesting project don't hesitate to contact me: my inbox is always open to discuss cutting-edge ideas!</h3>
-                <div class="container">
-                    <a href="assets/mail-address.png" target="_blank"><div class="item">
-                        <img src="assets/mail-icon.jpg" class="logo"/>
-                        <br/>
-                        Email
-                        <img src="assets/mail-address.png" style="border: none;"/>
-                    </div></a>
-                    <a href="https://github.com/pavanandrea?tab=repositories" target="_blank"><div class="item">
-                        <img src="assets/github-icon.jpg" class="logo"/>
-                        <br/>
-                        GitHub
-                        <img src="assets/github-address.png" style="border: none;"/>
-                    </div></a>
-                </div>
-            </div>
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2024 Andrea Pavan. All rights reserved.</p>
+            <p>Made from scratch in raw HTML and CSS</p>
+            <p>Except where otherwise noted, content on this site is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><p>
         </div>
-    </section>
-
-    <footer class="footer">
-        <p>Copyright &copy; 2024 Andrea Pavan</p>
-        <p>Made from scratch in raw HTML and CSS</p>
-        <p>Except where otherwise noted, content on this site is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><p>
     </footer>
 </body>
 </html>
