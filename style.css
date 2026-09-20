@@ -5,7 +5,7 @@
 
 :root {
     --primary-color: #2563eb;
-    --secondary-color: #8b5cf6;
+    --secondary-color: #1e5270;
     --text-color: #1f2937;
     --text-light: #6b7280;
     --bg-color: #ffffff;
@@ -23,7 +23,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-color: #3b82f6;
-        --secondary-color: #a855f7;
+        --secondary-color: #345f79;
         --text-color: #f9fafb;
         --text-light: #d1d5db;
         --bg-color: #111827;
@@ -201,6 +201,15 @@ section {
     gap: 2rem;
 }
 
+.projects-subtitle {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
 .project-card {
     background-color: var(--card-bg);
     border-radius: 10px;
@@ -303,7 +312,8 @@ section {
     Contact
 ***************************************************/
 .contact-section {
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
     text-align: center;
     padding: 4rem 0;

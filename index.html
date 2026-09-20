@@ -1,8 +1,9 @@
-<!--
+<!------------------------------------------------------------------------------
+    Personal website and portfolio
+
     Author: Andrea Pavan
     License: CC BY 4.0
--->
-
+------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +33,7 @@
         <div class="container">
             <h1>MSc in Aerospace Engineering</h1>
             <p>Hi, I'm Andrea Pavan. I specialize in fluid dynamics and aircraft architecture.</p>
-            <a href="#projects" class="btn">View my work</a>
+            <a href="#projects" class="btn">View my projects</a>
         </div>
     </section>
 
@@ -63,52 +64,10 @@
 
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Personal Projects</h2>
+
+            <h3 class="projects-subtitle">Software Projects</h3>
             <div class="projects-grid">
-                <!-- Project -->
-                <a href="https://webthesis.biblio.polito.it/26504/" target="_blank">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./assets/project-3d-printing-simulation.gif" alt="Thermo-mechanical simulation of the 3D printing process" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Thermomechanical simulation of 3D printing processes</h3>
-                        <p class="project-description">
-                            Developed a meshless method for unsteady heat transfer and linear elasticity,
-                            using it to investigate warping and inter-layer bonding strength.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">3D Printing</span>
-                            <span class="tag">Simulation</span>
-                            <span class="tag">Julia</span>
-                            <span class="tag">Master Thesis</span>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
-                <!-- Project -->
-                <a href="https://github.com/pavanandrea/AirfoilInverseDesign.jl" target="_blank">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./assets/project-airfoil-inverse-design.gif" alt="Airfoil inverse design and optimization" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Airfoil inverse design and optimization</h3>
-                        <p class="project-description">
-                            Implemented an Embedded Multi-Fidelity Inverse Design (EMFID) method,
-                            integrating XFoil and a genetic algorithm to optimize the shape of the airfoil.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Aerodynamics</span>
-                            <span class="tag">Optimization</span>
-                            <span class="tag">MATLAB</span>
-                            <span class="tag">Bachelor's Project</span>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
                 <!-- Project -->
                 <a href="https://github.com/pavanandrea/qprop.c" target="_blank">
                 <div class="project-card">
@@ -133,17 +92,17 @@
                 <!-- Project -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="./assets/project-cfd-solver.png" alt="CFD Solver" class="project-image">
+                        <img src="./assets/project-ransc.png" alt="rans.c" class="project-image">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Unstructured multiphysics CFD solver</h3>
+                        <h3 class="project-title">rans.c - GPU-resident CFD solver</h3>
                         <p class="project-description">
-                            Currently developing a FVM solver from scratch for high-ﬁdelity aero-thermo-mechanical simulations on 3D unstructured meshes.
+                            An unstructured compressible RANS solver developed from scratch to minimize memory usage on consumer GPUs.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Aerodynamics</span>
                             <span class="tag">Simulation</span>
-                            <span class="tag">Julia</span>
+                            <span class="tag">OpenCL</span>
                             <span class="tag">Personal Project</span>
                         </div>
                     </div>
@@ -184,6 +143,95 @@
                             <span class="tag">Flight Mechanics</span>
                             <span class="tag">C</span>
                             <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/ShallowChessAI/" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-shallowchessai.png" alt="ShallowChessAI" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ShallowChessAI - Low-depth chess engine</h3>
+                        <p class="project-description">
+                            A traditional alpha-beta chess engine coupled with a neural network trained on millions of positions via supervised learning using Stockfish as the teacher.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/TeenySlicer/" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-teenyslicer.png" alt="TeenySlicer" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TeenySlicer - Web-based 3D printing slicer</h3>
+                        <p class="project-description">
+                            A simple slicing software for 3D printing, running entirely in a web browser. Developed just for fun, serving as a sandbox for testing out new ideas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">Computational Geometry</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <h3 class="projects-subtitle">Engineering Projects</h3>
+            <div class="projects-grid">
+                <!-- Project -->
+                <a href="https://webthesis.biblio.polito.it/26504/" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-3d-printing-simulation.gif" alt="Thermo-mechanical simulation of the 3D printing process" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Thermomechanical simulation of 3D printing processes</h3>
+                        <p class="project-description">
+                            Developed a meshless method for unsteady heat transfer and linear elasticity,
+                            using it to investigate warping and inter-layer bonding strength.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Julia</span>
+                            <span class="tag">Master Thesis</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Project -->
+                <a href="https://github.com/pavanandrea/AirfoilInverseDesign.jl" target="_blank">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-airfoil-inverse-design.gif" alt="Airfoil inverse design and optimization" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Airfoil inverse design and optimization</h3>
+                        <p class="project-description">
+                            Implemented an Embedded Multi-Fidelity Inverse Design (EMFID) method,
+                            integrating XFoil and a genetic algorithm to optimize the shape of the airfoil.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Aerodynamics</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Bachelor's Project</span>
                         </div>
                     </div>
                 </div>
@@ -247,48 +295,6 @@
                 </div>
 
                 <!-- Project -->
-                <a href="https://github.com/pavanandrea/ShallowChessAI/" target="_blank">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./assets/project-shallowchessai.png" alt="ShallowChessAI" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">ShallowChessAI - Chess engine with limited look-ahead</h3>
-                        <p class="project-description">
-                            Developed a minimax chess engine that uses a MLP neural network as evaluation function, trained on Stockﬁsh scores to play at low search depths.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Julia</span>
-                            <span class="tag">C</span>
-                            <span class="tag">Personal Project</span>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
-                <!-- Project -->
-                <a href="https://github.com/pavanandrea/TeenySlicer/" target="_blank">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./assets/project-teenyslicer.png" alt="TeenySlicer" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">TeenySlicer - Web-based 3D printing slicer</h3>
-                        <p class="project-description">
-                            A simple slicing software for 3D printing, running entirely in a web browser. Developed just for fun, serving as a sandbox for testing out new ideas.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">3D Printing</span>
-                            <span class="tag">Computational Geometry</span>
-                            <span class="tag">C</span>
-                            <span class="tag">Personal Project</span>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
-                <!-- Project -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/project-corexy-3d-printer.jpg" alt="Homebuilt 3D printer" class="project-image">
@@ -326,8 +332,10 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
+
 
     <section id="skills">
         <div class="container">
@@ -413,7 +421,6 @@
     <footer>
         <div class="container">
             <p>Copyright &copy; 2024 Andrea Pavan. All rights reserved.</p>
-            <p>Made from scratch in raw HTML and CSS</p>
             <p>Except where otherwise noted, content on this site is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><p>
         </div>
     </footer>
